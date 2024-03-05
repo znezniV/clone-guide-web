@@ -1,17 +1,19 @@
-dateModified: 1709636548
+dateModified: 1709649312
 email:
   fromEmail: vinzenz@pm.me
   fromName: German
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    0d15864c-97e7-4cb2-b002-c8efd3798ce3: 'Markdown Text' # Markdown Text
+    5b01342c-dfe1-424a-a3eb-1208dd9e1501: 'Markdown Text' # Markdown Text
     6685fb4a-613d-4f17-b1f1-dfa247ede888: German # German
     7026e343-bd37-48e3-82e5-6833401bac4c: 'Clone Guide' # Clone Guide
+    a944f0ed-efb4-4d40-a4ce-5dad72fb1f8f: 'Markdown Text' # Markdown Text
     b234a0f3-0732-4540-8cb6-51f95c33050c: Home # Home
     bb209b2b-5ec6-466a-be46-0fed7805ba0c: Home # Home
     bd7caa60-5db5-4a93-8daa-5fc181deaf28: Default # Default
     c2d7e63a-dec6-4c24-9768-00397db4215c: Common # Common
+    cf4aeda7-b961-4f8f-b730-997045ee9333: 'Content Blocks' # Content Blocks
 plugins:
   assetusage:
     edition: standard

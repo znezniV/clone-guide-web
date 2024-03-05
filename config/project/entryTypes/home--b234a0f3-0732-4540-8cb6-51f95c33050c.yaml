@@ -33,7 +33,19 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 0d15864c-97e7-4cb2-b002-c8efd3798ce3 # Markdown Text
+            fieldUid: cf4aeda7-b961-4f8f-b730-997045ee9333 # Content Blocks
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47532114-fd5b-411a-af6b-b6612eceb5a0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0d15864c-97e7-4cb2-b002-c8efd3798ce3
             instructions: null
             label: null
             required: false
