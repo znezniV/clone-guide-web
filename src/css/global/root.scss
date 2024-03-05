@@ -2,28 +2,5 @@
     // color
     --color-background: #{$color-white};
     --color-footer: #{$color-black};
-    --color-text: #181818;
-    --color-border: $color-white;
-    --color-danger: $color-red;
-    --color-hightlight: #{$color-blue};
-    --color-shadow-neutral: #d9d9d9;
-    --color-shadow-blue: #0985ca;
-    --color-shadow-green: #52c375;
-    --color-shadow-red: #d41111;
-
-    // spacing
-    --spacing-large: 80px;
-    --spacing-medium-big: 68px;
-    --spacing-medium: 48px;
-    --spacing-small: 40px;
-    --spacing-very-small: 16px;
-    --spacing-tiny: 8px;
-    @include mq($until: tablet) {
-        --spacing-large: 56px;
-        --spacing-medium-big: 32px;
-        --spacing-medium: 25px;
-        --spacing-small: 18px;
-        --spacing-very-small: 12px;
-        --spacing-tiny: 8px;
-    }
+    --color-text: rgba(#{$color-black}, 1);
 }

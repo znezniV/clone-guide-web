@@ -3,7 +3,9 @@
 {% block page %}
     <div id="swup">
         <main class="page-transition-main">
-            {{ block('main') }}
+            <div class="content">
+                {{ block('main') }}
+            </div>
         </main>
 
         {% cache globally using key 'footer' %}

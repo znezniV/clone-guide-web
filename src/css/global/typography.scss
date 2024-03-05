@@ -10,20 +10,36 @@ h3,
 h4,
 h5,
 h6 {
+    @include text-stroke;
+    @include blur;
     font-weight: normal;
+    text-decoration: underline;
 }
 
 h2 {
-    @include typo-heading;
+    @include typo-heading-medium;
 }
 
 h1 {
-    @include typo-heading;
+    @include typo-heading-large;
 }
 
-h3,
+h3 {
+    @include typo-heading-small;
+}
+
 h4,
 h5,
 h6 {
     @include typo-body;
+}
+
+p {
+    @include typo-body;
+    @include text-stroke;
+}
+
+td {
+    @include typo-body;
+    @include text-stroke;
 }

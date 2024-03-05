@@ -24,54 +24,57 @@ $global-font-size: 18px;
 $global-line-height: 23px;
 
 // Font Families
-$font-default: "Elza Text", Helvetica, Arial, sans-serif;
-$font-heading: "Adaptive Mono", Helvetica, Arial, sans-serif;
+$font-default: Helvetica, Arial, sans-serif;
+$font-heading: "Times New Roman", serif;
 
 // Example Typography definitions
 @mixin typo-small() {
     font-family: $font-default;
     font-size: 14px;
-    line-height: 1.4;
-    @include mq($until: tablet) {
-        font-size: 12px;
-    }
+    line-height: 1.2;
+}
+
+@mixin typo-body-italic() {
+    font-family: $font-default;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+@mixin typo-body-bold() {
+    font-family: $font-default;
+    font-size: 14px;
+    line-height: 1.2;
 }
 
 @mixin typo-body() {
     font-family: $font-default;
-    font-size: 18px;
-    line-height: 1.4;
-    @include mq($until: tablet) {
-        font-size: 16px;
-    }
-}
-
-@mixin typo-quote() {
-    font-family: $font-heading;
-    font-size: 26px;
-    line-height: 1;
-    font-weight: bold;
-    @include mq($until: tablet) {
-        font-size: 22px;
-    }
+    font-size: 14px;
+    line-height: 1.2;
 }
 
 @mixin typo-heading-small() {
     font-family: $font-heading;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 1.1;
-    font-weight: bold;
-    @include mq($until: tablet) {
+    @include breakpoint-max(medium) {
         font-size: 20px;
     }
 }
 
-@mixin typo-heading() {
+@mixin typo-heading-medium() {
     font-family: $font-heading;
-    font-size: 45px;
-    line-height: 1;
-    font-weight: bold;
-    @include mq($until: tablet) {
-        font-size: 28px;
+    font-size: 34px;
+    line-height: 1.1;
+    @include breakpoint-max(medium) {
+        font-size: 25px;
+    }
+}
+
+@mixin typo-heading-large() {
+    font-family: $font-heading;
+    font-size: 51px;
+    line-height: 1.1;
+    @include breakpoint-max(medium) {
+        font-size: 20px;
     }
 }

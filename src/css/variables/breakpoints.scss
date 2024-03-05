@@ -3,20 +3,21 @@
  * breakpoints
  * -----------------------------------------------------------------------
  *
- * Read up! http://sass-mq.github.io/sass-mq/
- *
- * @link      https://y7k.com
+ * @link      https://github.com/znezniV
  * @licence   MIT
  * @version   1.0.0
  */
 
-
-$mq-breakpoints: (
-    phone: 0px,
-    phone-plus: 345px,
-    phablet: 600px,
-    tablet: 900px,
-    desktop: 1100px,
-    big-desktop: 1540px
+$breakpoints: (
+    width-xsmall: 320px,
+    width-small: 768px,
+    width-medium: 1034px,
+    width-large: 1200px,
+    width-xlarge: 1400px,
+    width-xxlarge: 1600px,
+    width-huge: 1600px,
+    height-small: 600px,
+    height-medium: 770px,
+    height-high: 900px,
+    width-max-wrap: 1440px,
 );
-

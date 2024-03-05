@@ -1,5 +1,4 @@
 // Libraries
-@import 'sass-mq/mq';
 
 // Variables
 @import 'variables/breakpoints.scss';
@@ -17,22 +16,21 @@
 
 // Mixins
 @import 'mixins/aspect-ratio.scss';
+@import 'mixins/blur.scss';
+@import 'mixins/breakpoint.scss';
 @import 'mixins/burger.scss';
 @import 'mixins/button.scss';
 @import 'mixins/clearfix.scss';
-@import 'mixins/container.scss';
 @import 'mixins/content-blocks.scss';
 @import 'mixins/fluid-font-size.scss';
 @import 'mixins/font-face.scss';
 @import 'mixins/font-size.scss';
-@import 'mixins/form.scss';
 @import 'mixins/grid.scss';
 @import 'mixins/hidden-visually.scss';
 @import 'mixins/mixins.scss';
 @import 'mixins/object-fit.scss';
 @import 'mixins/rem.scss';
-@import 'mixins/responsive-property.scss';
-@import 'mixins/spacings.scss';
+@import 'mixins/text-stroke.scss';
 @import 'mixins/unlink.scss';
 @import 'mixins/z-index.scss';
 
@@ -61,20 +59,3 @@
 // @import 'pages/**/*.scss';
 
 // Components
-@import 'components/blogPosts.scss';
-@import 'components/footer.scss';
-@import 'components/homeHero.scss';
-@import 'components/logo.scss';
-@import 'components/lottie.scss';
-@import 'components/nav.scss';
-@import 'components/newsletter.scss';
-@import 'components/pageHeading.scss';
-@import 'components/pageHeading.scss';
-@import 'components/content-blocks.scss';
-@import 'components/blocks/colorBlock.scss';
-@import 'components/blocks/image.scss';
-@import 'components/blocks/team.scss';
-@import 'components/blocks/text.scss';
-@import 'components/blocks/gallery.scss';
-@import 'components/blocks/embed.scss';
-@import 'components/blocks/quote.scss';

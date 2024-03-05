@@ -1,3 +1,7 @@
 a {
     @include unlink();
 }
+
+.anchor {
+    display: none;
+}
