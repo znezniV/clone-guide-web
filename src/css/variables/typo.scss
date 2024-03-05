@@ -46,6 +46,12 @@ $font-heading: "Times New Roman", serif;
     line-height: 1.2;
 }
 
+@mixin typo-table() {
+    font-family: $font-heading;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
 @mixin typo-body() {
     font-family: $font-default;
     font-size: 14px;

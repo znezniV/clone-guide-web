@@ -1,6 +1,15 @@
 :root {
     // color
-    --color-background: #{$color-white};
+    --color-background: #{$color-light-grey};
     --color-footer: #{$color-black};
     --color-text: rgba(#{$color-black}, 1);
+
+    // container
+    --page-container-limit: 522px;
+    --page-container-padding: 20px;
+
+    // responsive
+    @include breakpoint-max(medium) {
+        --page-container-padding: 12px;
+    }
 }

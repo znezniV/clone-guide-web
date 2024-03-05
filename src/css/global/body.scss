@@ -25,6 +25,8 @@ body {
     font-size: 18px;
 }
 
-main {
-    padding-top: 51px;
+.content {
+    margin: 0 auto;
+    padding: var(--page-container-padding);
+    max-width: var(--page-container-limit);
 }

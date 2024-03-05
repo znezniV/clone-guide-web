@@ -13,19 +13,28 @@ h6 {
     @include text-stroke;
     @include blur;
     font-weight: normal;
-    text-decoration: underline;
-}
-
-h2 {
-    @include typo-heading-medium;
+    margin: 0;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.1em;
 }
 
 h1 {
     @include typo-heading-large;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    @include typo-heading-medium;
+    margin-top: 66px;
+    margin-bottom: 33px;
 }
 
 h3 {
     @include typo-heading-small;
+    margin-top: 44px;
+    margin-bottom: 22px;
 }
 
 h4,
@@ -37,9 +46,11 @@ h6 {
 p {
     @include typo-body;
     @include text-stroke;
+    @include blur;
 }
 
 td {
     @include typo-body;
     @include text-stroke;
+    @include blur;
 }

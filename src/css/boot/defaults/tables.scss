@@ -16,4 +16,41 @@
  */
 table {
     width: 100%; /* [1] */
+    border-bottom: 1px dotted $color-black;
+}
+
+thead {
+    @include typo-table;
+    @include blur;
+    font-weight: bold;
+    text-align: left;
+}
+
+th {
+    border-bottom: 1px solid $color-black;
+    padding: 5px;
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+tr {
+    padding: 5px 0;
+}
+
+td {
+    padding: 5px;
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+    }
 }
