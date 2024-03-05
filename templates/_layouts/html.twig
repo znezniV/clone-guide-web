@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <!--
-               .
-              ":"
-            ___:____     |"\/"|
-          ,'        `.    \  /
-          |  O        \___/  |
-        ~^~^~^~^~^~^~^~^~^~^~^~^~
 
-    ~^~^~ Joris Noordermeer (Code) > noordermeer.ch
+ Design & Code: Vinzenz Leutenegger
 
 -->
 {% minify %}
@@ -31,7 +25,7 @@
 {#    {{ block('meta') ?? null }}#}
 
     {% cache %}
-        {% include '_helpers/seo.twig' %}
+        {# {% include '_helpers/seo.twig' %} #}
     {% endcache %}
 
     {{ craft.vite.script('src/js/app.js') }}
@@ -47,7 +41,7 @@
 
     {{ block('page') }}
 
-    {% include '_helpers/breakpoint.twig' %}
+    {# {% include '_helpers/breakpoint.twig' %} #}
     {% include '_helpers/devmode.twig' %}
 </body>
 </html>

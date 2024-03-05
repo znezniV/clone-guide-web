@@ -1,0 +1,28 @@
+columnSuffix: tfbmpfdi
+contentColumnType: text
+fieldGroup: c2d7e63a-dec6-4c24-9768-00397db4215c # Common
+handle: markdownText
+instructions: null
+name: 'Markdown Text'
+searchable: false
+settings:
+  enableLineWrapping: true
+  enableSpellChecker: false
+  enabledToolbarIconNames:
+    - bold
+    - italic
+    - quote
+    - ordered-list
+    - unordered-list
+    - link
+    - image
+    - doxter-users
+    - doxter-entries
+    - doxter-assets
+    - doxter-tags
+  indentWithTabs: false
+  showToolbar: true
+  tabSize: 2
+translationKeyFormat: null
+translationMethod: none
+type: verbb\doxter\fields\Doxter

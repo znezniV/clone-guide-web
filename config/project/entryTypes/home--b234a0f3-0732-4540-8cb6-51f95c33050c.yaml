@@ -1,5 +1,5 @@
 fieldLayouts:
-  07af1187-ab7d-41e1-b5b8-3115bacdccff:
+  11d16970-489e-4cfb-a773-8bafd9ca67ae:
     tabs:
       -
         elementCondition: null
@@ -12,6 +12,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -26,17 +27,32 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 5d96dd98-0072-4f16-83cd-67cf25995ada
+            uid: a8efd0a5-79dd-408e-9c9b-5fd9cadd17c8
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: 1a3e4cec-6e0e-427c-9087-7fbe08a8347f
+          -
+            elementCondition: null
+            fieldUid: 0d15864c-97e7-4cb2-b002-c8efd3798ce3 # Markdown Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 765671f0-816a-41a7-a815-195b50a11605
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 5a3c5172-d737-4cfd-88ef-0db2fb11f93e
         userCondition: null
 handle: home
 hasTitleField: false
 name: Home
-section: 4a8d2762-9460-4882-a033-0e12f54d164b # Home
+section: bb209b2b-5ec6-466a-be46-0fed7805ba0c # Home
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

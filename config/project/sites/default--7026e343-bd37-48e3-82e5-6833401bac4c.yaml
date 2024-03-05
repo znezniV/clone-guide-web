@@ -1,9 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
 enabled: true
-handle: de
+handle: default
 hasUrls: true
 language: de
-name: German
+name: 'Clone Guide'
 primary: true
-siteGroup: fe794aba-5bf0-44ef-a823-0fc9cc8fb93e # Craft Starter
+siteGroup: 6685fb4a-613d-4f17-b1f1-dfa247ede888 # German
 sortOrder: 1

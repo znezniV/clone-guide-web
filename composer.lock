@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4ba0590fa77e2feec2f771a9c9e5ddd",
+    "content-hash": "2f0c3144938f576615363f5857ea7e37",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4247,6 +4247,127 @@
             "time": "2021-03-10T17:56:57+00:00"
         },
         {
+            "name": "masterminds/html5",
+            "version": "2.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Masterminds/html5-php.git",
+                "reference": "f47dcf3c70c584de14f21143c55d9939631bc6cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/f47dcf3c70c584de14f21143c55d9939631bc6cf",
+                "reference": "f47dcf3c70c584de14f21143c55d9939631bc6cf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7.21 || ^6 || ^7 || ^8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masterminds\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Butcher",
+                    "email": "technosophos@gmail.com"
+                },
+                {
+                    "name": "Matt Farina",
+                    "email": "matt@mattfarina.com"
+                },
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
+                }
+            ],
+            "description": "An HTML5 parser and serializer.",
+            "homepage": "http://masterminds.github.io/html5-php",
+            "keywords": [
+                "HTML5",
+                "dom",
+                "html",
+                "parser",
+                "querypath",
+                "serializer",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/Masterminds/html5-php/issues",
+                "source": "https://github.com/Masterminds/html5-php/tree/2.8.1"
+            },
+            "time": "2023-05-10T11:58:31+00:00"
+        },
+        {
+            "name": "michelf/php-smartypants",
+            "version": "1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-smartypants.git",
+                "reference": "47d17c90a4dfd0ccf1f87e25c65e6c8012415aad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-smartypants/zipball/47d17c90a4dfd0ccf1f87e25c65e6c8012415aad",
+                "reference": "47d17c90a4dfd0ccf1f87e25c65e6c8012415aad",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Michelf": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "https://daringfireball.net/"
+                }
+            ],
+            "description": "PHP SmartyPants",
+            "homepage": "https://michelf.ca/projects/php-smartypants/",
+            "keywords": [
+                "dashes",
+                "quotes",
+                "spaces",
+                "typographer",
+                "typography"
+            ],
+            "support": {
+                "issues": "https://github.com/michelf/php-smartypants/issues",
+                "source": "https://github.com/michelf/php-smartypants/tree/1.8.1"
+            },
+            "time": "2016-12-13T01:01:17+00:00"
+        },
+        {
             "name": "mikehaertl/php-shellcommand",
             "version": "1.7.0",
             "source": {
@@ -4787,6 +4908,75 @@
                 "source": "https://github.com/jmespath/jmespath.php/tree/2.7.0"
             },
             "time": "2023-08-25T10:54:48+00:00"
+        },
+        {
+            "name": "mundschenk-at/php-typography",
+            "version": "v6.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mundschenk-at/php-typography.git",
+                "reference": "6b0414811f42e53e101f5ea5a8023c63eafd3dcb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/6b0414811f42e53e101f5ea5a8023c63eafd3dcb",
+                "reference": "6b0414811f42e53e101f5ea5a8023c63eafd3dcb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-pcre": "*",
+                "masterminds/html5": "^2.5.0",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "brain/monkey": "^2.2.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "ext-curl": "*",
+                "mundschenk-at/phpunit-cross-version": "dev-master",
+                "phpbench/phpbench": "^0.17||^1.0@dev",
+                "phpcompatibility/php-compatibility": "^9.0",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan": "^1.9",
+                "phpstan/phpstan-mockery": "^1.1",
+                "phpunit/phpunit": "5.*||6.*||7.*|8.*|9.*",
+                "squizlabs/php_codesniffer": "^3",
+                "wp-coding-standards/wpcs": "^2.0"
+            },
+            "bin": [
+                "src/bin/update-patterns.php",
+                "src/bin/update-iana.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Putzer",
+                    "email": "github@mundschenk.at",
+                    "homepage": "https://code.mundschenk.at",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jeffrey D. King",
+                    "email": "jeff.king@weathersource.com",
+                    "homepage": "http://kingdesk.com",
+                    "role": "Original author"
+                }
+            ],
+            "description": "A PHP library for improving your web typography",
+            "support": {
+                "issues": "https://github.com/mundschenk-at/php-typography/issues",
+                "source": "https://github.com/mundschenk-at/php-typography/tree/v6.7.0"
+            },
+            "time": "2022-11-14T22:30:08+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -5435,74 +5625,6 @@
                 "source": "https://github.com/paragonie/random_compat"
             },
             "time": "2020-10-15T08:29:30+00:00"
-        },
-        {
-            "name": "percipioglobal/craft-colour-swatches",
-            "version": "4.2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/percipioglobal/craft-colour-swatches.git",
-                "reference": "8bed94ff4ee1f2eee181721c0f8797b086e51569"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/percipioglobal/craft-colour-swatches/zipball/8bed94ff4ee1f2eee181721c0f8797b086e51569",
-                "reference": "8bed94ff4ee1f2eee181721c0f8797b086e51569",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "php": "^8.0.2"
-            },
-            "require-dev": {
-                "craftcms/phpstan": "dev-main"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Colour Swatches",
-                "handle": "colour-swatches",
-                "description": "Adding custom selectable colour palettes, gradients, classes and more to your field types.",
-                "developer": "percipiolondon",
-                "developerUrl": "https://percipio.london",
-                "documentationUrl": "https://github.com/percipioglobal/craft-colour-swatches/blob/v4/README.md",
-                "changelogUrl": "https://raw.githubusercontent.com/percipioglobal/craft-colour-swatches/v4/CHANGELOG.md",
-                "class": "percipiolondon\\colourswatches\\ColourSwatches"
-            },
-            "autoload": {
-                "psr-4": {
-                    "percipiolondon\\colourswatches\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Percipio Global",
-                    "homepage": "https://percipio.london"
-                }
-            ],
-            "description": "Let clients choose from a predefined set of colours and utilise associated colour codes and class names in your templates.",
-            "keywords": [
-                "Craft",
-                "cms",
-                "color-swatches",
-                "colors",
-                "colour-swatches",
-                "colours",
-                "craft-plugin",
-                "craftcms",
-                "swatches"
-            ],
-            "support": {
-                "docs": "https://github.com/percipioglobal/craft-colour-swatches/blob/v4/README.md",
-                "email": "support@percipio.london",
-                "issues": "https://github.com/percipioglobal/craft-colour-swatches/issues",
-                "source": "https://github.com/percipioglobal/craft-colour-swatches/tree/4.2.0.1"
-            },
-            "abandoned": "craftpulse/craft-colour-swatches",
-            "time": "2022-07-08T19:23:55+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -6925,95 +7047,6 @@
             "time": "2023-11-23T14:11:29+00:00"
         },
         {
-            "name": "sebastianlenz/craft-utils",
-            "version": "3.0.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastian-lenz/craft-utils.git",
-                "reference": "3abd09bd950dda67926f537b0d9b4b922c205c4d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/3abd09bd950dda67926f537b0d9b4b922c205c4d",
-                "reference": "3abd09bd950dda67926f537b0d9b4b922c205c4d",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^1.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "lenz\\craft\\utils\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A collection of utility classes for Craft CMS development",
-            "support": {
-                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.12"
-            },
-            "time": "2023-11-29T19:19:14+00:00"
-        },
-        {
-            "name": "sebastianlenz/linkfield",
-            "version": "2.1.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastian-lenz/craft-linkfield.git",
-                "reference": "b82fb1a8f94861f08c8b119758606a2a2172aef9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/b82fb1a8f94861f08c8b119758606a2a2172aef9",
-                "reference": "b82fb1a8f94861f08c8b119758606a2a2172aef9",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "php": "^8.0",
-                "sebastianlenz/craft-utils": "^3.0.5"
-            },
-            "require-dev": {
-                "craftcms/feed-me": "^5.0",
-                "craftcms/phpstan": "dev-main",
-                "phpstan/phpstan": "^1.8.5",
-                "phpunit/phpunit": "^7.5 || ^8.0",
-                "verbb/super-table": "^3.0.5"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "typedlinkfield",
-                "name": "Typed link field",
-                "developer": "Sebastian Lenz",
-                "developerUrl": "https://github.com/sebastian-lenz/"
-            },
-            "autoload": {
-                "psr-4": {
-                    "lenz\\linkfield\\": "src/"
-                },
-                "classmap": [
-                    "legacy"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A Craft field type for selecting links",
-            "support": {
-                "issues": "https://github.com/sebastian-lenz/craft-linkfield/issues",
-                "source": "https://github.com/sebastian-lenz/craft-linkfield/tree/2.1.5"
-            },
-            "time": "2022-11-29T09:36:26+00:00"
-        },
-        {
             "name": "seld/cli-prompt",
             "version": "1.0.4",
             "source": {
@@ -7990,6 +8023,68 @@
                 }
             ],
             "time": "2024-01-05T10:09:13+00:00"
+        },
+        {
+            "name": "spatie/yaml-front-matter",
+            "version": "2.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/yaml-front-matter.git",
+                "reference": "f2f1f749a405fafc9d6337067c92c062d51a581c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/yaml-front-matter/zipball/f2f1f749a405fafc9d6337067c92c062d51a581c",
+                "reference": "f2f1f749a405fafc9d6337067c92c062d51a581c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0|^8.0",
+                "symfony/yaml": "^3.0|^4.0|^5.0|^6.0|^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\YamlFrontMatter\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A to the point yaml front matter parser",
+            "homepage": "https://github.com/sebastiandedeyne/yaml-front-matter",
+            "keywords": [
+                "front matter",
+                "jekyll",
+                "spatie",
+                "yaml"
+            ],
+            "support": {
+                "source": "https://github.com/spatie/yaml-front-matter/tree/2.0.8"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-12-04T10:02:52+00:00"
         },
         {
             "name": "spatie/yii-ray",
@@ -11353,6 +11448,77 @@
             "time": "2024-03-03T23:27:19+00:00"
         },
         {
+            "name": "verbb/doxter",
+            "version": "5.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verbb/doxter.git",
+                "reference": "27cb6fb3d35ce1f7790a1df6e3cf4efbb765f87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verbb/doxter/zipball/27cb6fb3d35ce1f7790a1df6e3cf4efbb765f87c",
+                "reference": "27cb6fb3d35ce1f7790a1df6e3cf4efbb765f87c",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "michelf/php-smartypants": "^1.8",
+                "mundschenk-at/php-typography": "^6.3",
+                "php": "^8.0.2",
+                "spatie/yaml-front-matter": "^2.0",
+                "verbb/base": "^2.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Doxter",
+                "handle": "doxter",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/doxter/craft-4/CHANGELOG.md",
+                "class": "verbb\\doxter\\Doxter"
+            },
+            "autoload": {
+                "psr-4": {
+                    "verbb\\doxter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Verbb",
+                    "homepage": "https://verbb.io"
+                },
+                {
+                    "name": "Selvin Ortiz",
+                    "email": "selvin@selvin.co"
+                }
+            ],
+            "description": "Slick markdown editor and smart text parser.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "doxter"
+            ],
+            "support": {
+                "docs": "https://github.com/verbb/doxter",
+                "email": "support@verbb.io",
+                "issues": "https://github.com/verbb/doxter/issues?state=open",
+                "rss": "https://github.com/verbb/doxter/commits/v2.atom",
+                "source": "https://github.com/verbb/doxter"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/verbb",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-10-25T00:28:12+00:00"
+        },
+        {
             "name": "verbb/expanded-singles",
             "version": "2.0.5",
             "source": {
@@ -11481,72 +11647,6 @@
                 }
             ],
             "time": "2023-10-25T00:31:21+00:00"
-        },
-        {
-            "name": "verbb/hyper",
-            "version": "1.1.21",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/verbb/hyper.git",
-                "reference": "b4aa8ba03343934f6a35a1fc219a1e070caeb674"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/verbb/hyper/zipball/b4aa8ba03343934f6a35a1fc219a1e070caeb674",
-                "reference": "b4aa8ba03343934f6a35a1fc219a1e070caeb674",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "embed/embed": "^3.0.0 || ^4.0.0",
-                "nystudio107/craft-plugin-vite": "^4.0.0",
-                "php": "^8.0.2",
-                "verbb/base": "^2.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Hyper",
-                "handle": "hyper",
-                "changelogUrl": "https://raw.githubusercontent.com/verbb/hyper/craft-4/CHANGELOG.md",
-                "class": "verbb\\hyper\\Hyper"
-            },
-            "autoload": {
-                "psr-4": {
-                    "verbb\\hyper\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "A user-friendly links field for Craft.",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "hyper"
-            ],
-            "support": {
-                "docs": "https://github.com/verbb/hyper",
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/hyper/issues?state=open",
-                "rss": "https://github.com/verbb/hyper/commits/v2.atom",
-                "source": "https://github.com/verbb/hyper"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/verbb",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-03-03T23:31:46+00:00"
         },
         {
             "name": "verbb/smith",
