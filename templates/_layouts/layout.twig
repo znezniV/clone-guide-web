@@ -1,0 +1,17 @@
+{% extends "_layouts/html.twig" %}
+
+{% block page %}
+    <a href="#main" class="sr-only">Jump directly to main content</a>
+
+    <div id="swup">
+        <main class="page-transition-main">
+            {{ block('main') }}
+        </main>
+
+        {% cache globally using key 'footer' %}
+            {% include '_components/footer.twig' %}
+        {% endcache %}
+    </div>
+{% endblock %}
+
+

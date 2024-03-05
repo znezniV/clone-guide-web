@@ -1,0 +1,7 @@
+/.idea
+/vendor
+/storage
+/web
+/config/project
+composer.lock
+package-lock.json

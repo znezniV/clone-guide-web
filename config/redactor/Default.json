@@ -1,0 +1,19 @@
+{
+    "buttons": [
+        "formatting",
+        "italic",
+        "link",
+        "unorderedlist",
+        "bold",
+        "html"
+    ],
+    "formatting": ["p", "h2"],
+    "toolbarFixed": true,
+    "shortcuts": false,
+    "pasteBlockTags": ["p", "h2", "ul", "ol", "li"],
+    "pasteInlineTags": ["a", "i", "em", "br", "sup"],
+    "pasteLinkTarget": "_self",
+    "pasteImages": false,
+    "toolbar": true,
+    "air": false
+}

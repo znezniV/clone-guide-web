@@ -1,0 +1,14 @@
+@layer base {
+    html {
+        visibility: visible !important;
+    }
+
+    :root {
+        --grid: 0.625rem;
+    }
+
+    img {
+        text-indent: -9999px;
+        color: transparent;
+    }
+}

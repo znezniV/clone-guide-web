@@ -1,0 +1,35 @@
+.image {
+    margin: var(--spacing-medium) 0;
+    display: flex;
+    justify-content: center;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        width: 69.76%;
+        @include mq($until: tablet) {
+            width: 100%
+        }
+    }
+
+    &__caption {
+        @include typo-small();
+        margin-top: 0.714em;
+    }
+
+    &--portrait {
+        .image {
+            &__inner {
+                width: 43.33%;
+                @include mq($until: phablet) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.blocks--blog {
+    .image {
+    }
+}

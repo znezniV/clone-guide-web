@@ -1,0 +1,202 @@
+.colorBlock {
+    @include container($page-container);
+    @include grid();
+
+    @include mq($until: phablet) {
+        margin: 0 0;
+    }
+
+    &__inner {
+        @include grid(11);
+        grid-column: 2 / span 11;
+        background-color: var(--block-background);
+        color: var(--block-text);
+        padding-bottom: var(--spacing-medium-big);
+        padding-top: var(--spacing-small);
+
+        @include mq($until: phablet) {
+            grid-column: 1/span 12;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+
+    &__content {
+        grid-column: 2 / span 9;
+
+        @include mq($until: phablet) {
+            grid-column: 1/span 12;
+        }
+
+        p + p {
+            margin-top: 1em;
+        }
+    }
+
+    &__icon {
+        width: 130px;
+        height: 130px;
+        margin-bottom: var(--spacing-medium);
+        @include mq($until: tablet) {
+            width: 100px;
+            height: 100px;
+        }
+        @include mq($until: phablet) {
+            width: 82px;
+            height: 82px;
+        }
+
+        svg {
+            width: 100%;
+        }
+    }
+
+    &__top-heading {
+        display: flex;
+        margin-bottom: var(--spacing-medium);
+    }
+
+    &__text {
+        margin-top: var(--spacing-medium);
+    }
+
+    &__grid-list {
+        @include grid(3);
+        row-gap: var(--spacing-medium);
+        margin-top: var(--spacing-medium);
+        @include mq($until: desktop) {
+            @include grid(2);
+        }
+        @include mq($until: phablet) {
+            @include grid(1);
+        }
+    }
+
+    &__grid-heading {
+        @include typo-heading-small();
+    }
+
+    &__grid-text {
+        @include typo-small();
+        margin-top: 0.5714em;
+    }
+
+    &__button {
+        margin-top: var(--spacing-medium);
+
+        a {
+            @include button($background-color: $color-white);
+        }
+    }
+
+    &:nth-child(even) {
+        .colorBlock {
+            &__inner {
+                grid-column: 1 / span 11;
+                @include mq($until: phablet) {
+                    grid-column: 1/span 12;
+                }
+            }
+        }
+    }
+
+    &:nth-child(1n) {
+        .colorBlock {
+            &__inner {
+                --block-background: #{$color-blue};
+                --block-text: #{$color-white};
+            }
+        }
+    }
+    &:nth-child(2n) {
+        .colorBlock {
+            &__inner {
+                --block-background: #{$color-red};
+                --block-text: #{$color-white};
+            }
+        }
+    }
+    &:nth-child(3n) {
+        .colorBlock {
+            &__inner {
+                --block-background: #{$color-green};
+                --block-text: #{$color-black};
+            }
+        }
+    }
+
+    &--blue {
+        .colorBlock {
+            &__inner {
+                background-color: $color-blue;
+                color: $color-white;
+            }
+            &__button {
+                color: $color-blue;
+                a {
+                    @include button($background-color: $color-white, $color: $color-blue, $color-shadow: var(--color-shadow-blue));
+                }
+            }
+        }
+    }
+
+    &--red {
+        .colorBlock {
+            &__inner {
+                background-color: $color-red;
+                color: $color-white;
+            }
+            &__button {
+                color: $color-red;
+                a {
+                    @include button($background-color: $color-white, $color: $color-red, $color-shadow: var(--color-shadow-red));
+                }
+            }
+        }
+    }
+
+    &--green {
+        .colorBlock {
+            &__inner {
+                background-color: $color-green;
+                color: var(--color-text);
+            }
+            &__button {
+                color: $color-green;
+                a {
+                    @include button($background-color: $color-white, $color: $color-green, $color-shadow: var(--color-shadow-green));
+                }
+            }
+        }
+    }
+
+    &--white {
+        .colorBlock {
+            &__inner {
+                background-color: $color-white;
+                color: var(--color-text);
+            }
+            &__button {
+                color: var(--color-text);
+                a {
+                    @include button($background-color: $color-green, $color: $color-black, $color-shadow: var(--color-shadow-green));
+                }
+            }
+        }
+    }
+
+    &--white-blue-text {
+        .colorBlock {
+            &__inner {
+                background-color: $color-white;
+                color: $color-blue;
+            }
+            &__button {
+                color: $color-white;
+                a {
+                    @include button($background-color: $color-blue, $color: $color-white, $color-shadow: var(--color-shadow-blue));
+                }
+            }
+        }
+    }
+}

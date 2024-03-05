@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: de
+hasUrls: true
+language: de
+name: German
+primary: true
+siteGroup: fe794aba-5bf0-44ef-a823-0fc9cc8fb93e # Craft Starter
+sortOrder: 1

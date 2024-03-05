@@ -1,0 +1,46 @@
+/**
+ * -----------------------------------------------------------------------
+ * webfonts
+ * -----------------------------------------------------------------------
+ *
+ * Load external webfonts.
+ * Avoid google fonts if possible, due to privacy concerns
+ *
+ * @link      https://y7k.com
+ * @licence   MIT
+ * @version   1.0.0
+ */
+
+
+
+@font-face {
+    font-family: 'Adaptive Mono';
+    src:    url('/src/fonts/AdaptiveMono-Regular.woff2') format('woff2'),
+            url('/src/fonts/AdaptiveMono-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adaptive Mono';
+    src:    url('/src/fonts/AdaptiveMono-Bold.woff2') format('woff2'),
+            url('/src/fonts/AdaptiveMono-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Elza Text';
+    src:    url('/src/fonts/ElzaText-REgular.woff2') format('woff2'),
+            url('/src/fonts/ElzaText-REgular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Elza Text';
+    src:    url('/src/fonts/ElzaText-Semibold.woff2') format('woff2'),
+            url('/src/fonts/ElzaText-Semibold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}

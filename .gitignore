@@ -1,0 +1,11 @@
+/.env
+/.idea
+/vendor
+.DS_Store
+/config/license.key
+/node_modules
+/web/storage
+/web/dist
+/web/imager
+/web/src
+.hosts.yml

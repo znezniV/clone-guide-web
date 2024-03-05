@@ -1,0 +1,99 @@
+{
+    "type": "project",
+    "require": {
+        "php": "^8.1",
+        "besteadfast/craft-preparse-field": "^2.0.2",
+        "born05/craft-assetusage": "^3.1",
+        "carlcs/craft-uielementfields": "^2.0.3",
+        "clubstudioltd/craft-inline-svg": "^2.0",
+        "craftcms/cms": "^4.8.0",
+        "craftcms/postmark": "^3.0",
+        "craftcms/redactor": "^3.0.4",
+        "doublesecretagency/craft-cpcss": "^2.6",
+        "internetztube/craft-slug-equals-title": "^2.0.0",
+        "jorisnoo/craft-modules": "dev-main",
+        "mmikkel/cp-field-inspect": "^1.4.4",
+        "nystudio107/craft-emptycoalesce": "^4.0",
+        "nystudio107/craft-minify": "^4.0.0-beta.2",
+        "nystudio107/craft-vite": "^4.0.5",
+        "oofbar/craft-twig-toolbox": "^1.0.3",
+        "percipioglobal/craft-colour-swatches": "4.2.0.1",
+        "putyourlightson/craft-blitz-recommendations": "^2.1.1",
+        "putyourlightson/craft-dashboard-begone": "^2.0",
+        "sebastianlenz/linkfield": "^2.1.5",
+        "spacecatninja/imager-x": "^4.1.13",
+        "spacecatninja/imager-x-imageboss-transformer": "dev-local-paths",
+        "spatie/craft-ray": "^2.0",
+        "spicyweb/craft-embedded-assets": "^3.1.5",
+        "topshelfcraft/environment-label": "^4.0.3",
+        "ttempleton/craft-nocache": "^3.0",
+        "vaersaagod/matrixmate": "^2.1.3",
+        "vaersaagod/redirectmate": "1.0.0-beta.9",
+        "vaersaagod/seomate": "^2.1.1",
+        "verbb/cp-nav": "^4.0.10",
+        "verbb/hyper": "^1.1.5",
+        "verbb/expanded-singles": "^2.0.1",
+        "verbb/field-manager": "^3.0.5",
+        "verbb/smith": "^2.0",
+        "verbb/super-table": "^3.0.8.1",
+        "vlucas/phpdotenv": "^5.5.0",
+        "webhubworks/craft-ohdear": "^4.1.0",
+        "yiisoft/yii2-redis": "^2.0.18"
+    },
+    "require-dev": {
+        "nystudio107/craft-autocomplete": "^1.11",
+        "roave/security-advisories": "dev-latest",
+        "yiisoft/yii2-shell": "^2.0.5",
+        "deployer/deployer": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\": "modules/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "craftcms/plugin-installer": true,
+            "yiisoft/yii2-composer": true
+        },
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.1"
+        }
+    },
+    "scripts": {
+        "project-setup": [
+            "@composer install",
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@storage:link",
+            "@php craft setup/welcome"
+        ],
+        "storage:link": [
+            "ln -s ../storage/app/public web/storage",
+            "ln -s ../storage/imager web/imager"
+        ],
+        "post-deploy-cmd": [
+            "@php craft migrate/all --interactive=0",
+            "@php craft project-config/apply",
+            "@php craft invalidate-tags/all",
+            "@php craft clear-caches/all"
+        ],
+        "post-deploy-to-production-cmd": [
+            "@post-deploy-cmd"
+        ],
+        "deploy": [
+            "vendor/bin/dep deploy"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:jorisnoo/craft-imager-x-imageboss-transformer.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:jorisnoo/craft-modules.git"
+        }
+    ]
+}
