@@ -1,0 +1,8 @@
+ul {
+    li  {
+        @include blur;
+        @include typo-body-italic;
+        @include text-stroke;
+        margin: 5px 0;
+    }
+}

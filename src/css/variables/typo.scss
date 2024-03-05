@@ -35,9 +35,10 @@ $font-heading: "Times New Roman", serif;
 }
 
 @mixin typo-body-italic() {
-    font-family: $font-default;
+    font-family: $font-heading;
     font-size: 14px;
     line-height: 1.2;
+    font-style: italic;
 }
 
 @mixin typo-body-bold() {
