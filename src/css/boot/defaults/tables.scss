@@ -58,7 +58,7 @@ td {
     }
 
     &:last-child {
-        @include typo-body-italic;
+        // @include typo-body-italic;
         padding-right: 0;
     }
 }
