@@ -6,7 +6,7 @@
         "born05/craft-assetusage": "^3.1",
         "carlcs/craft-uielementfields": "^2.0.3",
         "clubstudioltd/craft-inline-svg": "^2.0",
-        "craftcms/cms": "^4.8.0",
+        "craftcms/cms": "4.8.1",
         "craftcms/postmark": "^3.0",
         "craftcms/redactor": "^3.0.4",
         "doublesecretagency/craft-cpcss": "^2.6",
@@ -92,6 +92,11 @@
         {
             "type": "vcs",
             "url": "git@github.com:jorisnoo/craft-modules.git"
+        },
+        {
+            "type": "composer",
+            "url": "https://composer.craftcms.com",
+            "canonical": false
         }
     ]
 }
