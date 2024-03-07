@@ -47,8 +47,11 @@ p {
     @include typo-body;
     @include text-stroke;
     @include blur;
-    text-indent: 5em;
     letter-spacing: 0.01em;
+
+    & + & {
+        text-indent: 5em;
+    }
 }
 
 td {
