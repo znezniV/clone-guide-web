@@ -5,7 +5,7 @@ namespace Deployer;
 require 'recipe/craftcms.php';
 
 set('application', 'craft-starter');
-set('repository', 'git@github.com:znezniV/craft-starter.git');
+set('repository', 'git@github.com:znezniV/clone-guide-web.git');
 
 set('git_ssh_command', 'ssh'); // Fixes: https://github.com/deployphp/deployer/issues/2908#issuecomment-1022748724
 set('allow_anonymous_stats', false); // Do not share anonymous data
@@ -16,22 +16,22 @@ set('http_user', 'www-data');
 set('writable_mode', 'chmod');
 
 host('staging')
-  ->set('hostname', 'staging.web.craft-starter.dev')
-  ->set('remote_user', 'johanne')
+  ->set('hostname', 'deeplinkexpress.pro')
+  ->set('remote_user', 'deeplin')
   ->set('forward_agent', true)
   ->set('port', 2121)
   ->set('branch', 'staging')
   ->set('labels', ['stage' => 'staging'])
-  ->set('deploy_path', '/www/staging');
+  ->set('deploy_path', '/clone-guide/staging');
 
 host('production')
-  ->set('hostname', 'craft-starter.dev')
-  ->set('remote_user', 'johanne')
+  ->set('hostname', 'deeplinkexpress.pro')
+  ->set('remote_user', 'deeplin')
   ->set('forward_agent', true)
   ->set('port', 2121)
   ->set('branch', 'main')
   ->set('labels', ['stage' => 'production'])
-  ->set('deploy_path', '/www/production');
+  ->set('deploy_path', '/clone-guide/production');
 
 // link storage
 task('craft:storage-link', function () {
